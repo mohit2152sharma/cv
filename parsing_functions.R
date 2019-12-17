@@ -47,6 +47,8 @@ strip_links_from_cols <- function(data, cols_to_strip){
 # Take a position dataframe and the section id desired
 # and prints the section to markdown. 
 print_section <- function(position_data, section_id){
+  position_data$end = dmy(position_data$end)
+  position_data$start = dmy(position_data$start)
   position_data %>% 
     filter(section == section_id) %>% 
     arrange(desc(end)) %>% 
@@ -67,8 +69,8 @@ print_section <- function(position_data, section_id){
     mutate(
       timeline = ifelse(
         is.na(start) | start == end,
-        end,
-        glue('{end} - {start}')
+        format.Date(end, '%b-%Y'),
+        glue('{format.Date(end, "%b-%Y")} - {format.Date(start,"%b-%Y")}')
       ),
       description_bullets = ifelse(
         no_descriptions,
