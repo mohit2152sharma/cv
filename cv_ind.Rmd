@@ -20,7 +20,7 @@ library(tidyverse)
 library(lubridate)
 
 # Set this to true to have links turned into footnotes at the end of the document
-PDF_EXPORT <- FALSE
+PDF_EXPORT <- TRUE
 
 # Holds all the links that were inserted for placement at the end
 links <- c()
@@ -54,9 +54,9 @@ Aside
 ```{r}
 # When in export mode the little dots are unaligned, so fix that. 
 if(PDF_EXPORT){
-  cat("View this CV online with links at _nickstrayer.me/cv_")
+  cat("View this CV online with links at _[mohitsharma.cv](https://mohit2152sharma.github.io/cv/)_")
 } else {
-  cat("[<i class='fas fa-download'></i> Download a PDF of this CV](https://github.com/nstrayer/cv/raw/master/strayer_cv.pdf)")
+  cat("[<i class='fas fa-download'></i> Download a PDF of this CV](https://github.com/mohit2152sharma/cv/cv_app.pdf)")
 }
 ```
 
@@ -130,6 +130,20 @@ print_section(position_data, 'education')
 
 
 
+Industry Experience {data-icon=suitcase}
+--------------------------------------------------------------------------------
+
+
+
+```{r}
+print_section(position_data, 'industry_positions')
+```
+
+::: aside
+I have worked in a variety of roles ranging from data analyst to business analyst to data scientist. I like collaborative environments where I can learn from my peers. 
+:::
+
+
 Projects {data-icon=chart-line}
 --------------------------------------------------------------------------------
 
@@ -151,19 +165,5 @@ print_section(position_data, 'specializations_courses')
 
 ::: aside
 I am passionate about education and self learning. I keep myself up-to date with latest skills in demand by regularly engaging in online courses. 
-:::
-
-
-Industry Experience {data-icon=suitcase}
---------------------------------------------------------------------------------
-
-
-
-```{r}
-print_section(position_data, 'industry_positions')
-```
-
-::: aside
-I have worked in a variety of roles ranging from data analyst to business analyst to data scientist. I like collaborative environments where I can learn from my peers. 
 :::
 
