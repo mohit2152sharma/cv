@@ -20,7 +20,7 @@ library(tidyverse)
 library(lubridate)
 
 # Set this to true to have links turned into footnotes at the end of the document
-PDF_EXPORT <- FALSE
+PDF_EXPORT <- TRUE
 
 # Holds all the links that were inserted for placement at the end
 links <- c()
@@ -153,7 +153,7 @@ print_section(position_data, 'projects')
 ```
 
 ::: aside
-I regularly blog about data science concepts and R programming on my [Blog] and occasionally explore publicly available data on kaggle.
+I regularly blog about data science concepts and R programming on my blog [Data Science Question A Day](https://mohit2152sharma.github.io/Data-Science-Question-A-Day/) and occasionally explore publicly available data on kaggle.
 :::
 
 Specializations {data-icon=chalkboard-teacher}
