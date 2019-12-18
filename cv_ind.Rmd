@@ -20,7 +20,7 @@ library(tidyverse)
 library(lubridate)
 
 # Set this to true to have links turned into footnotes at the end of the document
-PDF_EXPORT <- TRUE
+PDF_EXPORT <- FALSE
 
 # Holds all the links that were inserted for placement at the end
 links <- c()
@@ -75,13 +75,13 @@ Skills {#skills}
 skills <- tribble(
   ~skill,               ~level,
   "R",                  5,
-  "Python",             4,
-  "MySQL",              2,
-  "Microsoft PowerBI",  5,
-  "Data Science",       5,
   "Data Analytics",     5,
   "Data Visualization", 5,
-  "Machine Learning",   4
+  "Microsoft PowerBI",  5,
+  "Data Science",       4,
+  "Machine Learning",   4,
+  "Python",             4,
+  "MySQL",              2
 )
 
 build_skill_bars(skills)
@@ -167,3 +167,19 @@ print_section(position_data, 'specializations_courses')
 I am passionate about education and self learning. I keep myself up-to date with latest skills in demand by regularly engaging in online courses. 
 :::
 
+```{r}
+if(PDF_EXPORT){
+  cat("
+  
+Links {data-icon=link}
+--------------------------------------------------------------------------------
+<br>
+
+
+")
+  
+  walk2(links, 1:length(links), function(link, index){
+    print(glue('{index}. {link}'))
+  })
+}
+```
