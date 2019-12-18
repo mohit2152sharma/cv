@@ -77,6 +77,7 @@ skills <- tribble(
   "R",                  5,
   "Data Analytics",     5,
   "Data Visualization", 5,
+  "Agile",              5,
   "Microsoft PowerBI",  5,
   "Data Science",       4,
   "Machine Learning",   4,
