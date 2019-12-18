@@ -107,7 +107,7 @@ Mohit Sharma {#title}
 ```{r}
 intro_text <- "I am an IBM certified data scientist, with a 2 years of industry experience. I like to crunch numbers and present them in an intuitive and artistic manner to tell a meaningful digital story. I am well versed with data science algorithms and regression practices.
 
-Currently searching for a data science position that allows me to build tools using visualization and machine learning to help people explore and understand their data. 
+Currently searching for a position that allows me to build tools using visualization and machine learning to help people explore and understand their data. 
 "
 
 cat(sanitize_links(intro_text))
