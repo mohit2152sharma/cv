@@ -6,7 +6,7 @@ output:
   pagedown::html_resume:
     css: ['css/styles.css', 'resume']
     # set it to true for a self-contained HTML page but it'll take longer to render
-    self_contained: false
+    self_contained: true
 ---
 
 ```{r, include=FALSE}
@@ -56,7 +56,7 @@ Aside
 if(PDF_EXPORT){
   cat("View this CV online with links at _[mohitsharma.cv](https://mohit2152sharma.github.io/cv/)_")
 } else {
-  cat("[<i class='fas fa-download'></i> Download a PDF of this CV](https://github.com/mohit2152sharma/cv/raw/master/cv_app.pdf)")
+  cat("[<i class='fas fa-download'></i> Download a PDF of this CV](https://github.com/mohit2152sharma/cv/raw/master/cv_ind.pdf)")
 }
 ```
 
@@ -104,9 +104,8 @@ Mohit Sharma {#title}
 
 
 ```{r}
-intro_text <- "I am an IBM certified data scientist, with a 2 years of industry experience. I like to crunch numbers and present them in an intuitive and artistic manner to tell a meaningful digital story. I am well versed with data science algorithms and regression practices.
-
-Currently searching for a position that allows me to build tools using visualization and machine learning to help people explore and understand their data. 
+intro_text <- "I am an IBM certified data scientist, with a 4 years of industry experience. I am well versed with data science algorithms and regression practices and have an advanced level proficiency in BI tools (powerBI) and programming languages (R and Python).
+I like to crunch numbers and present them in an intuitive and artistic manner to tell a meaningful digital story.
 "
 
 cat(sanitize_links(intro_text))
@@ -121,22 +120,21 @@ print_section(position_data, 'achievements')
 ```
 
 
-Education {data-icon=graduation-cap data-concise=true}
---------------------------------------------------------------------------------
-
-```{r}
-print_section(position_data, 'education')
-```
-
-
-
 Industry Experience {data-icon=suitcase}
 --------------------------------------------------------------------------------
 
+```{r}
+print_section(position_data, "industry_positions")
+```
+
+
+Projects {data-icon=chart-line}
+--------------------------------------------------------------------------------
+
 
 
 ```{r}
-print_section(position_data, 'industry_positions')
+print_section(position_data, 'projects')
 ```
 
 ::: aside
@@ -144,12 +142,12 @@ I have worked in a variety of roles ranging from data analyst to business analys
 :::
 
 
-Projects {data-icon=chart-line}
+Education {data-icon=graduation-cap data-concise=true}
 --------------------------------------------------------------------------------
 
 
 ```{r}
-print_section(position_data, 'projects')
+print_section(position_data, 'education')
 ```
 
 ::: aside

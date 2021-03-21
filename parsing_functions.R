@@ -50,7 +50,7 @@ print_section <- function(position_data, section_id){
   position_data$end = dmy(position_data$end)
   position_data$start = dmy(position_data$start)
   position_data %>% 
-    filter(section == section_id) %>% 
+    filter(section == section_id, in_resume == TRUE) %>% 
     arrange(desc(end)) %>% 
     mutate(id = 1:n()) %>% 
     pivot_longer(
