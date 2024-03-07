@@ -32,22 +32,22 @@ work:
       - Created a monitoring and alerting system for production-deployed machine learning models, ensuring accuracy tracking and timely notifications for service interruptions.
       - Improved model api latency from 2 seconds to 40 milliseconds through cost-efficient utilization of Redis, implementation of quantization for accelerated model computations and using asynchronous api framework (fastapi).
       - Engineered an end-to-end CI/CD pipeline integrating pytest, Docker, and Python packaging, automatically deploying machine learning models to Kubernetes upon successful builds while managing artifact storage in AWS ECR and S3.
-      - Developed an in-house Python package enabling parallel execution of machine learning jobs on AWS Batch service. The package adeptly handles result persistence on aws s3 service. Significantly reduced the run time of jobs (from nearly 8 hours to 30 mins).
+      - Developed an in-house Python package enabling parallel execution of machine learning jobs on AWS Batch service. The package adeptly handles result persistence on aws s3 service. Reduced the runtime of jobs by 90%.
       - Developed a python package as an abstraction layer to streamline data access from AWS services. The package provides a unified interface to access data from MySQL server, Dynamodb and Athena.
       - Developed a Python template repository utilizing Cookiecutter, equipped with essential boilerplate code tailored for efficient initiation of machine learning projects, reducing project setup time.
       - Led seamless migration of projects from Python 3.7 to Python 3.11, minimizing disruption and breakage, ensuring continuity in machine learning and operations environments.
-      # - Devised a precise algorithm to retrieve and rectify missing or inaccurate food log data from users, proactively prompting them to input accurate information.
-      # - Develop a user-friendly dash-based platform for data scientists to collect real-time user feedback on machine learning models.
-      # - Established a high-capacity data pipeline for processing, cleansing, and storing over 1 million records.
+      - Devised a precise algorithm to retrieve and rectify missing or inaccurate food log data from users, proactively prompting them to input accurate information.
+      - Develop a user-friendly dash-based platform for data scientists to collect real-time user feedback on machine learning models.
+      - Established a high-capacity data pipeline for processing, cleansing, and storing over 1 million records.
 
   - name: Astrazeneca
     position: Data Scientist
     location: Chennai, India
-    summary: My work was focused on financial forecasting and reporting
+    summary: My work was focused on improving financial forecasting engine and building reporting infrastructure.
     startDate: 2021-08
     endDate: 2017-08
     highlights:
-      - Worked on improving the performance of our in-house sales forecasting engine using machine learning techniques like Gradient Boosting and Ensembling methods in R.
+      - Worked on improving the performance of our in-house financial forecasting engine using machine learning techniques like Gradient Boosting and Ensembling methods in R.
       - Build sales forecasting dashboards using R's Shiny framework for business leaders, visually explaining the results of the forecasting model.
       - Build a machine learning model to predict CO2 emissions from the company's datacenters using R. Also developed a dashboard for the same using R's Shiny framework.
       - Build an ETL pipeline (using MySQL DB, Excels) and a dashboard in R’s shiny framework, to streamline and automate the capacity management process.
