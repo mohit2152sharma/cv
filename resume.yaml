@@ -1,0 +1,99 @@
+# Demo resume adapted from https://github.com/jsonresume/resume-schema/blob/master/sample.resume.json
+
+basics:
+  name: Mohit Sharma
+  label: ML Engg
+  email: mohitlakshya@gmail.com
+  phone: (+91) 98841 84617
+  url: https://montepy.in
+  summary: >
+    I am an experienced machine learning and data science professional with over 6 years of 
+    industry experience. With a strong background in Python programming and a passion for 
+    exploring new technologies, I am constantly seeking ways to make a positive impact 
+    through innovative solutions. While, my work focuses on creating and deploying machine 
+    learning models, my non-work interests range widely, everything from learning new languages to
+    reading or contributing to open source.
+  location:
+    city: Delhi
+    countryCode: India
+  profiles:
+    - network: github
+      url: github.com/mohit2152sharma
+    - network: linkedin
+      url: https://bit.ly/49GGpN5
+work:
+  - name: Twinhealth
+    position: ML Engineer
+    location: Bangalore, India
+    summary: My work is focused on model optimization, scaling and deployment, along with making ML lifecycle more efficient.
+    startDate: 2021-09
+    endDate: Present
+    highlights:
+      - Created a monitoring and alerting system for production-deployed machine learning models, ensuring accuracy tracking and timely notifications for service interruptions.
+      - Improved model api latency from 2 seconds to 40 milliseconds through cost-efficient utilization of Redis, implementation of quantization for accelerated model computations and using asynchronous api framework (fastapi).
+      - Engineered an end-to-end CI/CD pipeline integrating pytest, Docker, and Python packaging, automatically deploying machine learning models to Kubernetes upon successful builds while managing artifact storage in AWS ECR and S3.
+      - Developed an in-house Python package enabling parallel execution of machine learning jobs on AWS Batch service. The package adeptly handles result persistence on aws s3 service. Significantly reduced the run time of jobs (from nearly 8 hours to 30 mins).
+      - Developed a python package as an abstraction layer to streamline data access from AWS services. The package provides a unified interface to access data from MySQL server, Dynamodb and Athena.
+      - Developed a Python template repository utilizing Cookiecutter, equipped with essential boilerplate code tailored for efficient initiation of machine learning projects, reducing project setup time.
+      - Led seamless migration of projects from Python 3.7 to Python 3.11, minimizing disruption and breakage, ensuring continuity in machine learning and operations environments.
+      # - Devised a precise algorithm to retrieve and rectify missing or inaccurate food log data from users, proactively prompting them to input accurate information.
+      # - Develop a user-friendly dash-based platform for data scientists to collect real-time user feedback on machine learning models.
+      # - Established a high-capacity data pipeline for processing, cleansing, and storing over 1 million records.
+
+  - name: Astrazeneca
+    position: Data Scientist
+    location: Chennai, India
+    summary: My work was focused on financial forecasting and reporting
+    startDate: 2021-08
+    endDate: 2017-08
+    highlights:
+      - Worked on improving the performance of our in-house sales forecasting engine using machine learning techniques like Gradient Boosting and Ensembling methods in R.
+      - Build sales forecasting dashboards using R's Shiny framework for business leaders, visually explaining the results of the forecasting model.
+      - Build a machine learning model to predict CO2 emissions from the company's datacenters using R. Also developed a dashboard for the same using R's Shiny framework.
+      - Build an ETL pipeline (using MySQL DB, Excels) and a dashboard in R’s shiny framework, to streamline and automate the capacity management process.
+      - Developed a chatbot to streamline the resource sharing process by sharing documents via chatbot as per user’s request.
+
+education:
+  - institution: IIT Madras
+    area: B.Tech in Civil Engineering
+    score: "Score: 7.2"
+    startDate: 2013-07
+    endDate: 2017-07
+
+certificates:
+  - name: "Microsoft Certified: Azure Data Scientist Associate"
+    date: 2021-05
+    issuer: Microsoft
+    url: https://www.credly.com/badges/d8f62295-7e4b-4bb2-8a6e-70789159c7a9/public_url
+  - name: "Python Advanced"
+    date: 2020-09
+    issuer: HackerRank
+    url: https://www.hackerrank.com/certificates/5450acf0eca3
+  - name: "Python 3 Programming"
+    date: 2019-09
+    issuer: Coursera
+    url: https://www.coursera.org/account/accomplishments/specialization/RX3XF2UU8E9G
+  - name: IBM Data Science Professional
+    date: 2019-03
+    issuer: IBM/Coursera
+    url: https://www.coursera.org/account/accomplishments/specialization/QEWRHM22XRGP
+
+skills:
+  - name: Machine Learning
+    keywords: ["python", "pytorch", "pandas", "mysql", "R"]
+
+  - name: Cloud Computing
+    keywords: ["AWS", "lambda", "S3", "Dynamodb", "Azure"]
+
+  - name: Machine Learning Operations (MLOps)
+    keywords: ["CICD", "Optimization", "Monitoring", "Airflow", "Docker"]
+
+projects:
+  - name: "rewiser-gpt"
+    description: A github action to manage your daily devlogs and help you revise them regularly.
+    startDate: 2023-07
+    endDate: Present
+    url: https://github.com/mohit2152sharma/rewiser-gpt
+    highlights:
+      - It uses anki-like algorithm to figure out the next revision to be done and sends it via email.
+      - It uses openai's api to generate question on the devlog to test the revision.
